@@ -1,0 +1,1 @@
+This notebook conatains the code used that was used for training the model on IBM Watson Studio.
