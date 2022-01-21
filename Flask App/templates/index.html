@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gaize App</title>  
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/indexStyles.css')}}">
+
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='fonts/iconic/css/material-design-iconic-font.min.css')}}">
+
+		<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendor/animate/animate.css')}}">
+		<!--===============================================================================================-->
+			<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendor/css-hamburgers/hamburgers.min.css')}}">
+		<!--===============================================================================================-->
+			<link rel="stylesheet" type="text/css" href=" {{url_for('static',filename='vendor/animsition/css/animsition.min.css')}}">
+		<!--===============================================================================================-->
+			<link rel="stylesheet" type="text/css" href=" {{url_for('static',filename='vendor/select2/select2.min.css')}}">
+		<!--===============================================================================================-->
+			<link rel="stylesheet" type="text/css" href=" {{url_for('static',filename='vendor/daterangepicker/daterangepicker.css')}}">
+
+	</head>
+
+	<body>
+
+<div class="container-contact100">
+
+	<div class="wrap-contact100">
+		<form class="contact100-form validate-form" action="/data_predict" method="POST">
+			<span class="contact100-form-title">
+				Prediction of Electrical Output Power of Combined Cycle Power Plant
+			</span>
+			
+			<div class="wrap-input100 validate-input" data-validate="Please enter Ambient Temperature(AT)">
+				<input class="input100" type="text" id="at" name="at" placeholder="Ambient Temperature(AT)">
+				<span class="focus-input100"></span>
+			</div>
+
+			<div class="wrap-input100 validate-input" data-validate="Please enter Exhaust Vacuum(V)">
+				<input class="input100" type="text" id="v" name="v" placeholder="Exhaust Vacuum(V)">
+				<span class="focus-input100"></span>
+			</div>
+
+			<div class="wrap-input100 validate-input" data-validate="Please enter Ambient Pressure(AP)">
+				<input class="input100" type="text" id="ap" name="ap" placeholder="Ambient Pressure(AP)">
+				<span class="focus-input100"></span>
+			</div>
+
+			<div class="wrap-input100 validate-input" data-validate="Please enter Relative Humidity(RH)">
+				<input class="input100" type="text" id="rh" name="rh" placeholder="Relative Humidity(RH)">
+				<span class="focus-input100"></span>
+			</div>
+
+			
+
+			<div class="container-contact100-form-btn">
+				<button type="submit" class="contact100-form-btn">
+					Predict
+				</button>
+			
+			</div>
+		</form>
+
+		
+	</div>
+</div>
+
+
+
+
+<!--===============================================================================================-->
+<script src=" {{url_for('static',filename='vendor/jquery/jquery-3.2.1.min.js')}}"></script>
+<!--===============================================================================================-->
+	<script src=" {{url_for('static',filename='vendor/animsition/js/animsition.min.js')}}"></script>
+<!--===============================================================================================-->
+	<script src=" {{url_for('static',filename='vendor/bootstrap/js/popper.js')}}"></script>
+	<script src=" {{url_for('static',filename='vendor/bootstrap/js/bootstrap.min.js')}}"></script>
+<!--===============================================================================================-->
+	<script src=" {{url_for('static',filename='vendor/select2/select2.min.js')}}"></script>
+<!--===============================================================================================-->
+	<script src=" {{url_for('static',filename='vendor/daterangepicker/moment.min.js')}}"></script>
+	<script src=" {{url_for('static',filename='vendor/daterangepicker/daterangepicker.js')}}"></script>
+<!--===============================================================================================-->
+	<script src=" {{url_for('static',filename='vendor/countdowntime/countdowntime.js')}}"></script>
+<!--===============================================================================================-->
+	
+<!--===============================================================================================-->
+	<script src=" {{url_for('static',filename='js/main.js')}}"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>GAIZE Prediction App</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href=" {{url_for('static',filename='css/bootstrap.min.css')}}">
+    <!-- style css -->
+    <link rel="stylesheet" href=" {{url_for('static',filename='css/homeStyles.css')}}">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href=" {{url_for('static',filename='css/jquery.mCustomScrollbar.min.css')}}">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+</head>
+
+<body class="main-layout">
+    <header> 
+        <!-- header inner -->
+        <div class="head_top">
+            <div class="header">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                            <div class="full">
+                                <div class="center-desk">
+                                    <div class="logo">
+                                        <a href="#" id="logo">Gaize</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                            <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                           </button>
+                                <div class="collapse navbar-collapse" id="navbarsExample04">
+                                    <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"> Home  </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#second">About</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/predict">Predict</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end header inner -->
+            <!-- end header -->
+            <!-- banner -->
+            <section class="banner_main">
+                <div class="container">
+                    <div class="row d_flex">
+                        <div class=" col-xl-8 col-lg-8 col-md-8 col-12-9">
+                            <div class="text-bg">
+                                <h1>Prediction Of Full Load Electrical Power Output Of A Base Load Operated Combined Cycle Power Plant Using IBM Watson</h1>
+                                <a href="#second">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    <!-- end banner -->
+    <!-- blog_main -->
+    <div class="blog_main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2 id="second">Introduction</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- fist section -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="our_two_box">
+                        <div class="row d_flex">
+
+                            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                                <div class="our_img">
+                                    <figure><img src=" {{url_for('static',filename='images/our_img1.jpg')}}" alt="#" /></figure>
+                                </div>
+                            </div>
+                            <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+                                <div class="our_text_box">
+                                    <p>The Combined Cycle Power Plant or combined cycle gas turbine, a gas turbine generator generates electricity and waste heat is used to make steam to generate additional electricity via a steam turbine. The gas turbine
+                                        is one of the most efficient one for the conversion of gas fuels to mechanical power or electricity. Combined cycle power plants are frequently used for power production. These days prediction of power plant output
+                                        based on operating parameters is a major concern. </p>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <div class="our_text_box">
+                                    <p>Predicting full load electrical power output of a base load power plant is important in order to maximize the profit from the available megawatt hour. This Project examines and compares some machine learning regression
+                                        methods to develop a predictive model, which can predict hourly full load electrical power output of a combined cycle power plant. The base load operation of a power plant is influenced by four main parameters,
+                                        which are used as input variables in the dataset, such as ambient temperature, atmospheric pressure, relative humidity, and exhaust steam pressure. These parameters affect electrical power output, which is considered
+                                        as the target variable. A web application is built to enter the inputs and view the result.</p>
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <div class="our_text_box1">
+                                        <a href="/predict" class="myButton">
+                                            <p>Go To Predict !
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end fist section -->
+
+
+        </div>
+    </div>
+    <!-- end blog_main -->
+
+    <!--  footer -->
+    <footer>
+        <div class="footer">
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>© 2022 All Rights Reserved. Design by Gaize</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- sidebar -->
+    <script src=" {{url_for('static',filename='js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
+    <script src=" {{url_for('static',filename='js/custom.js')}}"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+</body>
+
+</html>
